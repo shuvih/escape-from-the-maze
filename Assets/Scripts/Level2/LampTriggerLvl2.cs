@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LampTriggerLvl2: MonoBehaviour
 {
     [SerializeField] private Text text;
+    [SerializeField] private List<GameObject> walls = new List<GameObject>();
     [SerializeField] private GameObject wall1;
     [SerializeField] private GameObject wall2;
     [SerializeField] private GameObject wall3;

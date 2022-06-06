@@ -1034,7 +1034,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b3343cb9473cfc4f95118dc9929be20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
+  menu: {fileID: 6781293130426492983, guid: e5c30aaefc1c73d46b31dbde4d808229, type: 3}
 --- !u!1 &3005332449047156319
 GameObject:
   m_ObjectHideFlags: 0
@@ -11548,5 +11549,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abdb6b3b32e6e24aa0586d407a4c090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 400
+  mouseSensitivity: 200
   playerBody: {fileID: 3005332449047513661}

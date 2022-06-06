@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TigerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
+    [SerializeField] private float speed = 7f;
     private CharacterController characterController;
     private Animator animator;
 

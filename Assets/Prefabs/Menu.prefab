@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 6781293130008307413}
   - component: {fileID: 6781293130008307402}
   - component: {fileID: 6781293130008307403}
-  - component: {fileID: 6781293130008307412}
+  - component: {fileID: 4585899857835984411}
   m_Layer: 5
   m_Name: ToManeMenu
   m_TagString: Untagged
@@ -359,8 +359,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6781293130008307412}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 4585899857835984411}
+        m_TargetAssemblyTypeName: GameMenuButtons, Assembly-CSharp
         m_MethodName: mainMenu
         m_Mode: 1
         m_Arguments:
@@ -371,7 +371,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6781293130008307412
+--- !u!114 &4585899857835984411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6781293130008307401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4769b3afdc8a5cb419bf892177217886, type: 3}
+  m_Script: {fileID: 11500000, guid: b1645bc99b2dfef469c235e075dd9af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6781293130426492983
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 6781293130557253668}
   - component: {fileID: 6781293130557253669}
   - component: {fileID: 6781293130557253850}
-  - component: {fileID: 6781293130557253671}
+  - component: {fileID: 8799504097406971132}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -620,8 +620,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6781293130557253671}
-        m_TargetAssemblyTypeName: Restart, Assembly-CSharp
+      - m_Target: {fileID: 8799504097406971132}
+        m_TargetAssemblyTypeName: GameMenuButtons, Assembly-CSharp
         m_MethodName: restart
         m_Mode: 1
         m_Arguments:
@@ -632,7 +632,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6781293130557253671
+--- !u!114 &8799504097406971132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6781293130557253848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0f1fba186daa1749a39fbab84b3434a, type: 3}
+  m_Script: {fileID: 11500000, guid: b1645bc99b2dfef469c235e075dd9af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6781293130801183392
@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 6781293130801183404}
   - component: {fileID: 6781293130801183405}
   - component: {fileID: 6781293130801183394}
-  - component: {fileID: 6781293130801183407}
+  - component: {fileID: 2791282326548666291}
   m_Layer: 5
   m_Name: Save
   m_TagString: Untagged
@@ -767,8 +767,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6781293130801183407}
-        m_TargetAssemblyTypeName: SaveLevel, Assembly-CSharp
+      - m_Target: {fileID: 2791282326548666291}
+        m_TargetAssemblyTypeName: GameMenuButtons, Assembly-CSharp
         m_MethodName: saveLevel
         m_Mode: 1
         m_Arguments:
@@ -779,7 +779,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6781293130801183407
+--- !u!114 &2791282326548666291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6781293130801183392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ec217eecf6a9343b2725ad00303035, type: 3}
+  m_Script: {fileID: 11500000, guid: b1645bc99b2dfef469c235e075dd9af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6781293130828556895

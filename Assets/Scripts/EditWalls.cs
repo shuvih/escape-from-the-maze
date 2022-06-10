@@ -16,13 +16,13 @@ public class EditWalls : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            foreach (GameObject wall in activateWalls)
+            for (int i = 0; i < activateWalls.Count; i++)
             {
-                wall.SetActive(true);
+                activateWalls[i].SetActive(true);
             }
-            foreach (GameObject wall in deactivateWalls)
+            for (int i = 0; i < deactivateWalls.Count; i++)
             {
-                wall.SetActive(false);
+                deactivateWalls[i].SetActive(false);
             }
             EventManager.getOnExitFlameTrigger().Invoke();
             this.gameObject.SetActive(false);

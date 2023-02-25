@@ -15,9 +15,6 @@ public class FoxController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
         animator.SetTrigger("Walk");
-        animator.SetTrigger("Sit");
-        animator.SetTrigger("Walk");
-        animator.SetTrigger("Stay");
         //animator.SetTrigger("Sit");
     }
 

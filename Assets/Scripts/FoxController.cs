@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class FoxController : MonoBehaviour
 {
@@ -8,14 +9,18 @@ public class FoxController : MonoBehaviour
     private Vector3 velocity;
     private CharacterController characterController;
     private Animator animator;
+    private NavMeshAgent agent;
+    private float gravity = -9.81f;
+    private float speed = 7f;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         characterController = GetComponent<CharacterController>();
+        agent = GetComponent<NavMeshAgent>();
+        agent.SetDestination(new Vector3(155, 30, 189));
         animator.SetTrigger("Walk");
-        //animator.SetTrigger("Sit");
     }
 
     void Update()
@@ -31,9 +36,17 @@ public class FoxController : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        /*
-         * »дЄм играть и ждЄм
-         */
-        rb.velocity = Vector3.up;
+
+        if (agent.remainingDistance < 0.1f)
+        {
+            animator.SetTrigger("Stay");
+        }
+        else
+        {
+            Vector3 movement = transform.right * 0 + transform.forward * 0.3f;
+            characterController.Move(movement * speed * Time.deltaTime);
+            velocity.y += gravity * Time.deltaTime;
+            characterController.Move(velocity * Time.deltaTime);
+        }
     }
 }
